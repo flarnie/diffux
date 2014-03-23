@@ -21,8 +21,8 @@
         %span.icon-bar
     .collapse.navbar-collapse
       %ul.nav.navbar-nav
-        = menu_item 'Projects', projects_path
-        = menu_item 'About', static_pages_about_path
+        = menu_item t(:projects).titleize, projects_path
+        = menu_item t(:about).titleize, static_pages_about_path
 
   .container
     - if notice

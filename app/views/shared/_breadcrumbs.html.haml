@@ -1,4 +1,4 @@
-- crumbs.unshift(['Projects', projects_path])
+- crumbs.unshift([t(:projects).titleize, projects_path])
 - last_linkable_crumb = crumbs.reverse.find { |crumb| crumb[1] }
 %ol.breadcrumb
   - crumbs.each do |crumb|

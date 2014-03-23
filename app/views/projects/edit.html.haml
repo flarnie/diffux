@@ -1,8 +1,10 @@
-- provide :title, 'Edit Project'
+- provide :title, "Edit #{t(:project).titleize}"
 
 = render 'shared/breadcrumbs', crumbs: [["Edit #{@project.name}"]]
 
-%h1 Edit Project
+%h1
+  Edit
+  = t(:project).titleize
 
 = render 'projects/form'
 
